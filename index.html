@@ -171,7 +171,7 @@
                 if (!loadintT) {
                     return;
                 }
-                loadintT.innerHTML = 'loading......' + parseInt(tempSeconds) + '%' +'\n BGM : dolphin (seongmin, feat.tk)' ;
+                loadintT.innerHTML = 'BGM : dolphin (seongmin, feat.tk)' ;
 
                 switch (tempSeconds) {
                     case 20:
@@ -204,7 +204,7 @@
                 if (tempSeconds > 100) {
                     clearInterval(timer);
                     tempSeconds = 100
-                    loadintT.innerHTML ='loading......' + parseInt(tempSeconds) + '%';
+                    loadintT.innerHTML ='BGM : dolphin (seongmin, feat.tk)';
                 }
             }, t * 1000);
         }
