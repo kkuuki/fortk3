@@ -84,6 +84,7 @@
 
     <div id="adContainer" style="display:none;position: absolute;top:0px;left: 0px;width:100%;height:100%;z-index:999;"></div>
     <div id="loadingText" style="width:100%;display: none;text-align:center;position:absolute;top:45%;z-index:2;font-size:20px;color:#f99f0a">
+        BGM : dolphin (seongmin feat.kt)<br>
         loading......0%
     </div>
 
@@ -171,7 +172,7 @@
                 if (!loadintT) {
                     return;
                 }
-                loadintT.innerHTML = 'BGM : dolphin (seongmin, feat.tk)' ;
+                loadintT.innerHTML = 'loading......' + parseInt(tempSeconds) + '%' ;
 
                 switch (tempSeconds) {
                     case 20:
@@ -204,7 +205,7 @@
                 if (tempSeconds > 100) {
                     clearInterval(timer);
                     tempSeconds = 100
-                    loadintT.innerHTML ='BGM : dolphin (seongmin, feat.tk)';
+                    loadintT.innerHTML ='loading......' + parseInt(tempSeconds) + '%';
                 }
             }, t * 1000);
         }
